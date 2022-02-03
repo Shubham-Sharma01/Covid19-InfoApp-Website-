@@ -1,0 +1,177 @@
+
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<script type="text/javascript">
+//function is made//
+
+
+function number(){
+	var vs=document.getElementById("para2").value;
+	var ch=(/^\d{3}-\d{3}-\d{4}$/);
+	if(ch.test(vs)){
+		document.getElementById("message2").innerHTML="valid";
+	}
+	else{
+		document.getElementById("message2").innerHTML="not valid";
+	}
+}
+
+
+</script>
+<link rel="stylesheet" type="text/css" href="file1.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.list{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+input{
+width:200px;
+height:20px;
+}
+body{
+border: 15px solid darkgray;
+}
+.footer {
+  padding: 0px;
+  text-align: center;
+  background: #ddd;
+  width:100%;
+}
+#img{
+width:50%;
+}
+label{
+font-size:25px;
+font-weight:300px;
+color:white;
+}
+label:hover{
+background-color:white;
+color:black;
+}
+button{
+background-color:black;
+color:black;
+
+width:300px;
+padding:4px;
+border-radius:40px;
+}
+</style>
+<style>
+.header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}.hello{
+  width:100%;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+#div1 {animation-timing-function: linear;}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1100px;}
+}
+span{
+color:white;
+}
+</style>
+</head>
+<body >
+<ul>
+  <li class="list"><em>SUNDAY 16TH AUGUST</em></li>
+  <li style="float:right"><a href="09aboutus.html">About</a></li>
+  <li style="float:right"><a href="00mainpage.html#form">Contact Us</a></li>
+  <li style="float:right"><a href="00mainpage.html">Home</a></li>
+</ul>
+<br>
+
+<!--form-->
+<fieldset style="margin:200px auto;width:900px;">
+<legend style="text-align:center;font-family:Lobster;letter-spacing:4px;word-spacing:5px;font-size:50px">LOGIN HERE</legend>
+<form>
+<table style="margin:auto;width:600px;background-color:black;" cellpadding="40px" cellspacing="6px" >
+<tr><td>
+<label>PHONE-NUMBER:</label></td><td>
+<input type="text" name="phonenumber" id="para2" placeholder="xxx-xxx-xxxx" onblur="number()"/></td><td><span id="message2"></span></td></tr>
+<tr><td>
+
+<label>PASSWORD:</label></td><td>
+<input type="password" name="password" id="pwd" placeholder="*******" onblur="number()"/></td><td><span id="message3"></span></td></tr>
+
+
+</table>
+<br>
+<center>
+<button onclick="sub()"><label>Log In</label> </button>
+</center>
+</form>
+</fieldset>
+
+<div class="header">
+<div class="hello" id="div1">
+  <h1 class="monospace">TRIBUTE TO CORONA WARRIORS</h1>
+  </div>
+<img id="img" src="https://content.thriveglobal.in/wp-content/uploads/sites/3/2020/04/CORONA-WARRIORS.jpg">
+<iframe width="560" height="500" src="https://www.youtube.com/embed/QiBeywmJoRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ <div class="footer" id="footer">
+  <table id="t1" cellpadding="20px"
+			cellspacing="20px"align="center">
+  <tr>
+  <th>WHAT WE DO</th>
+  <th>REGIONS WE COVER</th>
+  <th>CONTACT US</th>
+  </tr>
+  <tr>
+  <td>AWARE PEOPLE</td>
+  <td>DELHI</td>
+  <td>EMAIL</td>
+  
+  </tr>
+  <tr>
+  <td>CORONA UPDATE</td>
+  <td>MAHARASHTRA</td>
+  <td>FACEBOOK</td>
+  </tr>
+  <tr>
+  <td>SAFETY MEASURES</td>
+  <td>UP</td>
+  <td>INSTAGRAM</td>
+  </tr>
+  
+  </table>
+  
+  
+</div>
+
+</body>
+</html>

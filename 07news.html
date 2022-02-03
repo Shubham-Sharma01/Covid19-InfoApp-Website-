@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CORONAVIRUS NEWS</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="news.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.list{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+.header1{
+background-color:white;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 55px;
+  text-align: center;
+}
+.hello{
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+#div1 {animation-timing-function: linear;}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1100px;}
+}
+h3{
+color:white;
+}
+body{
+	background-color:black;
+}
+.heading{
+	color: white;
+}
+.head{
+	text-decoration-line: underline;
+  text-decoration-style: double;
+  color: white;
+  text-align:center;
+  font-size: 40px;
+}
+.container{
+margin: 0 auto;
+margin-top: 20px;
+position: relative;
+width: 70%;
+height: 0;
+padding-bottom: 30%;
+background: grey;
+border: solid 10px black;
+}
+.container1{
+	background-color: white;
+}
+	
+.space{
+	padding-right: 30px;
+	padding-left: 10px;
+}
+.img11{
+	height:250px;
+	width:270px;
+}
+.slide_img{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.slide_img img{
+	width:100%;
+	height:100%;
+}
+#i1,#i2,#i3{
+	display:none;
+}
+.pre,.next{
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(88,88,88,.4);
+	z-index: 99;
+	cursor:pointer;
+}
+.pre{
+	left:0;
+}
+.next{
+	right:0;
+}
+.nav{
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+.dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,.6);
+}
+.slide_img{
+	z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+	z-index: 9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+	background: #fff;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	.grid {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.grid > article:hover{
+  transition: transform .1s ease-out;
+  transform: translateY(5px);
+}
+
+.grid > article img {
+  width: 100%;
+}
+
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text > h3{
+  text-transform: uppercase;
+}
+
+.text > a button {
+  background: linear-gradient(to right, #f030a7, #f0308d, #f03061);
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .grid > article{
+    text-align: center;
+  }
+}
+.footer {
+  padding: 0px;
+  text-align: center;
+  background: #ddd;
+  width:100%;
+}
+#t1{
+			
+			background: black;
+  color: white;
+  width:100%;
+			
+			}
+</style>
+</head>
+<body>
+<ul>
+  <li class="list"><em>SUNDAY 16TH AUGUST</em></li>
+  <li style="float:right"><a href="aboutus.html">About Us</a></li>
+  <li style="float:right"><a href="mainpage.html#form">Contact Us</a></li>
+  <li style="float:right"><a href="mainpage.html">Home</a></li>
+</ul>
+<div class="header">
+<div class="hello" id="div1">
+  <h1 class="monospace">CORONAVIRUS</h1>
+  </div>
+</div>
+<div class="container">
+<input type="radio" name="images" id="i1" checked>
+<input type="radio" name="images" id="i2">
+<input type="radio" name="images" id="i3">
+<div class="slide_img" id="one">
+<img src="covid12.jpg">
+<label for="i3" class="pre"></label>
+<label for="i2" class="next"></label>
+</div>
+<div class="slide_img" id="two">
+<img src="covid11.jpg">
+<label for="i1" class="pre"></label>
+<label for="i3" class="next"></label>
+</div>
+<div class="slide_img" id="three">
+<img src="covid13.jpg">
+<label for="i2" class="pre"></label>
+<label for="i1" class="next"></label>
+</div>
+<div class="nav">
+<label class="dots" id="dot1" for="i1"></label>
+<label class="dots" id="dot2" for="i2"></label>
+<label class="dots" id="dot3" for="i3"></label>
+</div>
+</div>
+<h1 class="head"> LATEST NEWS </h1><hr>
+<div class="header1">
+<main class="grid">
+          <article>
+            <img class="img11" src="cricket1.jpg">
+            <div class="text">
+              <h2>Chennai Super Kings captain MS Dhoni has tested negative for COVID-19</h2>
+              <p>Dhoni will now be arriving in Chennai for a one-week training camp on Friday ahead of the 2020 edition of the Indian
+			  Premier League.</p>
+              <a href="07newss1.html"><button>Read More...</button></a>
+            </div>
+          </article>
+		  <article>
+            <img class="img11" src="kerala.jpg">
+            <div class="text">
+              <h2>Coronavirus India Update: Kerala likely to witness 10,000 to 20,000 cases per day during Aug-Sept, says Health Minister Shailaja</h2>
+              <p>Kerala is likely to witness a sharp rise Covid-19 cases in the months of August and September with daily
+infections expected to touch between 10,000 to 20,000, state health minister K K Shailaja said.</p>
+              <a href="07newss2.html"><button>Read More...</button></a>
+            </div>
+          </article>
+		  <article>
+            <img class="img11" src="covaxin.jpg">
+            <div class="text">
+              <h2>Preliminary results of phase 1 clinical trials of the Bharat Biotech-ICMR developed Covid-19 vaccine, Covaxin, suggest that the vaccine is safe
+</h2>
+             <p>The vaccine is developed from a strain of SARS-CoV-2 isolated by ICMR-National Institute of Virology, Pune.</p>
+              <a href="07newss3.html"><button>Read More...</button></a>
+            </div>
+          </article>
+		  </main>
+		  </div><hr>
+		  <h2 class="heading">Video Links</h2>
+		  <iframe  class="space" width="450" height="315" src="https://www.youtube.com/embed/EVQHS20aLRI?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      <iframe class="space" width="450" height="315" src="https://www.youtube.com/embed/6Ej4g1ydU58?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <iframe class="space" width="450" height="315" src="https://www.youtube.com/embed/F2Iy80_JIMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+		  <hr>
+		  <div class="footer" id="footer">
+  <table id="t1" cellpadding="20px"
+			cellspacing="20px"align="center">
+  <tr>
+  <th>WHAT WE DO</th>
+  <th>REGIONS WE COVER</th>
+  <th>CONTACT US</th>
+  </tr>
+  <tr>
+  <td>AWARE PEOPLE</td>
+  <td>DELHI</td>
+  <td>EMAIL</td>
+  
+  </tr>
+  <tr>
+  <td>CORONA UPDATE</td>
+  <td>MAHARASHTRA</td>
+  <td>FACEBOOK</td>
+  </tr>
+  <tr>
+  <td>SAFETY MEASURES</td>
+  <td>UP</td>
+  <td>INSTAGRAM</td>
+  </tr>
+  
+  </table>
+  
+  
+</div>
+</body>
+</html>
